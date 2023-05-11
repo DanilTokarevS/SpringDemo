@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin table</title>
+</head>
+<body>
+<h1>Таблица для администраторов</h1>
+
+<thead>
+<tr>
+    <th class="text-left"> ID </th> <th> Имя </th> <th> ID перелета </th>
+</tr>
+</thead>
+    <tbody>
+<p th:each="item : ${list}">
+    <tb th:text="${item}">item</tb>
+</p>
+    </tbody>
+
+
+<br>
+<br>
+<a th:href="@{/login}">Выйти</a>
+</body>
+</html>

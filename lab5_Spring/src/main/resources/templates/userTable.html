@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page</title>
+</head>
+<body>
+
+<h1>Таблица для пользователя</h1>
+
+<thead>
+<tr>
+    <th class="text-left">ID</th> <th>Рейс</th>
+</tr>
+</thead>
+<p th:each="item : ${list}">
+    <span th:text="${item}"></span>
+</p>
+<br>
+<a th:href="@{/login}">Выход</a>
+</body>
+</html>
